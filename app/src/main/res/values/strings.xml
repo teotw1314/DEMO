@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DEMO</string>
+
+    <string name="view_loading_loadingtext">正在加载</string>
+    <string name="view_loading_error_title">加载失败</string>
+    <string name="view_loading_error_info">请检查网络</string>
+</resources>

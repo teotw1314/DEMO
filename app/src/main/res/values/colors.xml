@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="view_loading_error_title_color">#226DDD</color>
+    <color name="view_loading_error_info_color">#226DDD</color>
+    <color name="view_loading_loadingtext_color">#226DDD</color>
+    <color name="view_loading_indicator_color">#226DDD</color>
+</resources>
