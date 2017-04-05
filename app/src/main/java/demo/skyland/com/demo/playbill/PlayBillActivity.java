@@ -7,7 +7,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import demo.skyland.com.demo.R;
 import demo.skyland.com.demo.base.BaseActivity;
-import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
+
 
 import android.support.v7.widget.RecyclerView;
 
