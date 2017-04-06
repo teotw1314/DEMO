@@ -11,4 +11,5 @@
 
     <!--playbill-->
     <color name="playbill_date_text_color">#757575</color>
+    <color name="playbill_program_text_color">#616161</color>
 </resources>

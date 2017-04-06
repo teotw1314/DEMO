@@ -2,23 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
+    android:padding="@dimen/item_padding"
     android:orientation="horizontal"
-    android:padding="@dimen/item_padding">
+    android:gravity="center_vertical">
 
     <TextView
-        android:id="@+id/item_date_day_text"
+        android:id="@+id/item_playbill_date_day_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="04月05日"
-        android:textColor="@color/playbill_date_text_color" />
+        android:textColor="@color/playbill_date_text_color"
+        android:text="04月05日"/>
 
     <TextView
-        android:id="@+id/item_date_week_text"
+        android:id="@+id/item_playbill_date_week_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="星期三"
-        android:textColor="@color/playbill_date_text_color" />
+        android:paddingLeft="@dimen/item_ocx_padding_left"
+        android:textColor="@color/playbill_date_text_color"
+        android:text="星期三"/>
 
 </LinearLayout>
