@@ -19,13 +19,12 @@
             android:excludeFromRecents="true"/>
 
         <!-- 微信平台 -->
-
         <activity
-            android:name=".WXEntryActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <!-- QQ、Qzone -->
         <activity

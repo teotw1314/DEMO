@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "demo.skyland.com.demo"
+        applicationId "com.lxsky.hitv"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -58,4 +58,5 @@ dependencies {
     compile 'se.emilsjolander:stickylistheaders:2.7.0'
     //https://github.com/CymChad/BaseRecyclerViewAdapterHelper/
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.4'
+    compile project(path: ':libraryumeng')
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="demo.skyland.com.demo.MainActivity">
+    tools:context="com.lxsky.com.com.MainActivity">
 
     <Button
         android:id="@+id/main_start_service_activity"
@@ -23,4 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="节目单组件" />
+
+    <Button
+        android:id="@+id/mian_umeng_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="友盟分享组件" />
 </LinearLayout>

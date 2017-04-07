@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.umeng.socialize.Config;
@@ -25,8 +26,8 @@ import com.umeng.socialize.utils.ShareBoardlistener;
  */
 public abstract class UmengShare {
 
-    public static final String SHARE_URL = "http://www.96335" +
-            ".com/hitv2013/?from=singlemessage&isappinstalled=1";
+//    public static final String SHARE_URL = "http://www.96335" + ".com/hitv2013/?from=singlemessage&isappinstalled=1";
+    public static final String SHARE_URL = "http://www.baidu.com";
 
     private Activity activity;
 
@@ -131,7 +132,7 @@ public abstract class UmengShare {
                     public void onclick(SnsPlatform snsPlatform, SHARE_MEDIA share_media) {
                         new ShareAction(activity)
 //                                .withTitle(title)//标题
-//                                .withText(text)//内容
+                                .withText(text)//内容
 //                                .withMedia(uMImage)//图标
 //                                .withTargetUrl(targetUrl)//跳转地址
                                 .withMedia(web)
@@ -161,6 +162,7 @@ public abstract class UmengShare {
     }
 
     private UMShareListener umShareListener = new UMShareListener() {
+
         @Override
         public void onStart(SHARE_MEDIA share_media) {
 
@@ -168,7 +170,7 @@ public abstract class UmengShare {
 
         @Override
         public void onResult(SHARE_MEDIA platform) {
-//            Log.d("plat","platform"+platform);
+            Log.d("ss__", "onResult: ");
             if(platform.name().equals("WEIXIN_FAVORITE")){
                 Toast.makeText(activity,platform + " 收藏成功",Toast.LENGTH_SHORT).show();
             }else{
@@ -179,6 +181,7 @@ public abstract class UmengShare {
 
         @Override
         public void onError(SHARE_MEDIA platform, Throwable t) {
+            Log.d("ss__", "error: ");
             UmengShare.this.onError(platform, t);
             Toast.makeText(activity,platform + " 分享失败", Toast.LENGTH_SHORT).show();
 //            if(t!=null){
@@ -188,6 +191,7 @@ public abstract class UmengShare {
 
         @Override
         public void onCancel(SHARE_MEDIA platform) {
+            Log.d("ss__", "onCancel: " + platform.toString());
             UmengShare.this.onCancel(platform);
 //            Toast.makeText(activity,platform + " 分享取消了", Toast.LENGTH_SHORT).show();
         }
@@ -213,6 +217,7 @@ public abstract class UmengShare {
         String[] mPermissionList = new String[]{Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.CALL_PHONE,Manifest.permission.READ_LOGS,
                 Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.ACCESS_WIFI_STATE,
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.SET_DEBUG_APP,
                 Manifest.permission.SYSTEM_ALERT_WINDOW,
