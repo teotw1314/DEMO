@@ -9,7 +9,15 @@
     <color name="view_loading_loadingtext_color">#226DDD</color>
     <color name="view_loading_indicator_color">#226DDD</color>
 
-    <!--playbill-->
+    <!--playbill date-->
+    <color name="playbill_date_listview_bg">#e4e3e3</color>
     <color name="playbill_date_text_color">#757575</color>
+    <color name="playbill_item_date_bg_color">#ddffffff</color>
+    <color name="playbill_item_date_normal_bg">#e4e3e3</color>
+    <color name="playbill_item_date_selected_bg">#ffffff</color>
+    <!--playbill program-->
+    <color name="playbill_program_listview_bg">#bcb9b9</color>
     <color name="playbill_program_text_color">#616161</color>
+    <color name="playbill_item_program_normal_bg">#ffffff</color>
+    <color name="playbill_item_program_selected_bg">#e4e3e3</color>
 </resources>

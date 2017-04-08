@@ -59,4 +59,5 @@ dependencies {
     //https://github.com/CymChad/BaseRecyclerViewAdapterHelper/
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.4'
     compile project(path: ':libraryumeng')
+    compile project(':stickyitemecoration')
 }
